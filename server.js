@@ -1,13 +1,10 @@
 const express = require('express');
 const app = express();
 
-// add CORS
 const cors = require('cors');
-
-// add app-level middleware
 app.use(cors());
 
-app.set('port', process.env.NODE_ENV || 3001)
+app.set('port', process.env.NODE_ENV || 3001);
 app.locals.title = "Snack Box";
 app.locals.snacks = [
   { id: 1, name: "Cheez-its", type: "chips" },
