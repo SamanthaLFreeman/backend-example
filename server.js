@@ -12,7 +12,6 @@ app.locals.snacks = [
   { id: 3, name: "Cheerios", type: "cereal" },
   { id: 4, name: "Tortila Chips", type: "chips" }
 ];
-app.use(express.json());
 
 app.get('/', (request, response) => {
   return response.send('Oh a Snack Box!!!');
