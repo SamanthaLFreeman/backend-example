@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-app.set('port', process.env.NODE_ENV || 3001);
+app.set('port', process.env.PORT || 3001);
 app.locals.title = "Snack Box";
 app.locals.snacks = [
   { id: 1, name: "Cheez-its", type: "chips" },
